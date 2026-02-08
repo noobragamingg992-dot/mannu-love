@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Mannu 💖</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background: linear-gradient(135deg,#ff5f9e,#ff9a9e);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:'Poppins',sans-serif;
+  overflow:hidden;
+  color:white;
+}
+.heart{
+  position:absolute;
+  bottom:-20px;
+  font-size:20px;
+  animation: floatUp 6s linear infinite;
+  opacity:0.7;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) scale(1);opacity:1;}
+  100%{transform:translateY(-110vh) scale(1.5);opacity:0;}
+}
+.card{
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  max-width:360px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.3);
+  animation: pop 1.2s ease;
+}
+@keyframes pop{
+  0%{transform:scale(0);}
+  100%{transform:scale(1);}
+}
+h1{font-size:30px;margin-bottom:10px;}
+p{font-size:16px;line-height:1.7;}
+button{
+  margin-top:20px;
+  padding:12px 26px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:#ff3f7f;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+iframe{display:none;}
+</style>
+</head>
+<body>
+
+<iframe src="https://www.youtube.com/embed/hoNb6HuNmU0?autoplay=1&loop=1&playlist=hoNb6HuNmU0" allow="autoplay"></iframe>
+
+<div class="card">
+  <h1>Mannu 💖</h1>
+  <p>
+    Aaj Purpose Day hai…<br>
+    aur mera purpose sirf ek hai 💞<br><br>
+    <b>Tum.</b><br><br>
+    Aaj se teri galiyan,<br>
+    saari meri ho gayi… ✨<br><br>
+    Chahe kal kya ho,<br>
+    main har din tumhe choose karta hoon.
+  </p>
+  <button onclick="alert('Shiva loves you endlessly 💕')">
+    Click if you smile 😊
+  </button>
+  <p style="margin-top:15px;font-size:14px;">
+    — Forever yours, <b>Shiva ❤️</b>
+  </p>
+</div>
+
+<script>
+for(let i=0;i<30;i++){
+  let heart=document.createElement("div");
+  heart.className="heart";
+  heart.innerHTML="💖";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.animationDuration=(4+Math.random()*4)+"s";
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
